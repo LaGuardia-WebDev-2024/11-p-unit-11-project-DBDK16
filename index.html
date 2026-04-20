@@ -29,11 +29,14 @@ Select ONE Additional
       <li>
         <h3 id="mem1">Memory #1</h3>
         <p>More about this memory.</p>
+        <img class="pic1" src="https://eu-images.contentstack.com/v3/assets/blt949ea8e16e463049/blt8a82f4ad43f29c5b/6486fc30be9ac347f42104e4/AI.webp"> 
       </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
         <p>More about this memory.</p>
+<img class="pic2" src=""> 
+      
       </li>
 
       <li>
@@ -43,24 +46,28 @@ Select ONE Additional
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
+    <script> 
+    $(".pic1").hide ()
 
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
                $("#mem1").text("Being born");
+               $(".pic1").show (3000)
       });
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
            $("#mem2").text("not being late to the best class ever");
-      });
+      $(".pic2").show (3000)
+          });
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
         $("#mem3").text("Staten Island Ferry");
+        $(".pic3").show (3000)
       });
 
 
